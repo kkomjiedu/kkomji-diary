@@ -1,0 +1,73 @@
+/* 그림책 인쇄 레이아웃 — 816px = 216mm (재단 210mm + 도련 3mm). 화면 미리보기와 PDF가 같은 마크업을 씁니다. */
+.pg{width:816px;height:816px;position:relative;overflow:hidden;background:#FFFDF8;color:#3A342F;font-family:'IBM Plex Sans KR',sans-serif;flex:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pg *{box-sizing:border-box}
+.pg .safe{position:absolute;left:57px;right:57px;top:53px;bottom:44px;display:flex;flex-direction:column}
+.pg .no{position:absolute;left:0;right:0;bottom:20px;text-align:center;font-size:11px;color:#7A716A}
+.pg .hand{font-family:'Gaegu',cursive}
+.pg .meta{display:flex;justify-content:center;align-items:center;gap:18px;font-size:15px;color:#4F4842;padding-bottom:12px;border-bottom:1px solid #E6DED2}
+.pg .meta i{width:1px;height:14px;background:#D9CFC2}
+.pg .ttl{font-family:'Gaegu',cursive;font-weight:700;line-height:1.15;margin:0}
+.pg .art{display:flex;align-items:center;justify-content:center;min-height:0}
+.pg .art img{max-width:100%;max-height:100%;width:auto;height:auto}
+.pg .story{font-family:'Gaegu',cursive;white-space:pre-wrap;margin:0;overflow:hidden}
+.pg .story img{max-width:100%;max-height:150px}
+.pg .note{font-family:'Gowun Dodum',sans-serif;color:#4F4842;margin:0}
+.pg .lbl{font-size:11px;letter-spacing:.06em;color:#7A716A;white-space:nowrap}
+.pg .sp{flex:1}
+/* 1 클래식 */
+.pg.l-classic .ttl{font-size:44px;text-align:center;margin:20px 0 14px}
+.pg.l-classic .art{height:300px}.pg.l-classic.nonote .art{height:350px}
+.pg.l-classic .story{font-size:27px;line-height:1.6;margin:22px 8px 0;max-height:176px}
+.pg.l-classic .nb{border-top:1px solid #E6DED2;padding-top:10px;display:flex;gap:16px;align-items:baseline}
+.pg.l-classic .note{font-size:15px;line-height:1.7}
+/* 2 갤러리 */
+.pg.l-gallery .art{height:400px;background:#fff}.pg.l-gallery.nonote .art{height:450px}
+.pg.l-gallery .hd{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:26px}
+.pg.l-gallery .ttl{font-size:38px}
+.pg.l-gallery .m2{font-size:13px;color:#6E655D;white-space:nowrap}
+.pg.l-gallery .story{font-size:24px;line-height:1.55;margin-top:12px;max-height:112px}
+.pg.l-gallery .note{font-size:14px;line-height:1.7}.pg.l-gallery .lbl{margin-right:12px}
+/* 3 그림일기장 */
+.pg.l-notebook .safe{border:1.5px solid #CFC5B8;border-radius:6px;overflow:hidden;bottom:48px}
+.pg.l-notebook .hd{display:grid;grid-template-columns:1.6fr 1fr 1fr;border-bottom:1.5px solid #CFC5B8;font-size:15px}
+.pg.l-notebook .hd span{padding:12px 16px;border-right:1px solid #DDD4C8}.pg.l-notebook .hd span:last-child{border-right:none}
+.pg.l-notebook .hd small{font-size:11px;color:#7A716A;margin-right:8px}
+.pg.l-notebook .tr{display:flex;align-items:baseline;gap:12px;padding:10px 16px;border-bottom:1px solid #DDD4C8}
+.pg.l-notebook .ttl{font-size:32px}
+.pg.l-notebook .art{height:290px;border-bottom:1.5px solid #CFC5B8;padding:10px;background:#fff}.pg.l-notebook.nonote .art{height:330px}
+.pg.l-notebook .story{flex:1;padding:4px 20px 0;font-size:26px;line-height:44px;background-image:repeating-linear-gradient(180deg,transparent 0,transparent 43px,#E2D9CC 43px,#E2D9CC 44px);background-position:0 4px}
+.pg.l-notebook .nb{border-top:1.5px solid #CFC5B8;padding:10px 16px;display:flex;gap:14px;align-items:baseline}
+.pg.l-notebook .note{font-size:14px;line-height:1.65}
+/* 4 나란히 */
+.pg.l-side .safe{gap:20px}
+.pg.l-side .meta{justify-content:space-between;font-size:14px}
+.pg.l-side .cols{flex:1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px;min-height:0}
+.pg.l-side .art{background:#fff}
+.pg.l-side .rt{display:flex;flex-direction:column;gap:16px;padding-top:24px;min-height:0}
+.pg.l-side .ttl{font-size:36px}
+.pg.l-side .story{font-size:24px;line-height:1.6}
+.pg.l-side .nb{border-top:1px solid #E6DED2;padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.pg.l-side .note{font-size:14px;line-height:1.7}
+/* 5 액자 */
+.pg.l-frame .safe{align-items:center}
+.pg.l-frame .art{height:330px;max-width:100%;padding:22px;background:#fff;border:1px solid #E6DED2;box-shadow:0 2px 0 #EFE8DD}.pg.l-frame.nonote .art{height:380px}
+.pg.l-frame .ttl{font-size:36px;text-align:center;margin:26px 0 4px}
+.pg.l-frame .m2{font-size:13px;color:#6E655D;letter-spacing:.04em}
+.pg.l-frame .story{font-size:24px;line-height:1.55;text-align:center;margin-top:16px;max-height:112px}
+.pg.l-frame .rule{width:40px;height:1px;background:#CFC5B8;margin-bottom:10px}
+.pg.l-frame .note{font-size:14px;line-height:1.7;text-align:center;max-width:560px}
+/* 표지 */
+.pg.cover{background:#FBF7EE}
+.pg.cover .safe{inset:49px;align-items:center;justify-content:center}
+.pg.cover h1{font-family:'Gaegu',cursive;font-weight:700;margin:0;color:#3A342F}
+.pg.cover img{height:auto;mix-blend-mode:multiply}
+.pg.c-gallery .safe{gap:44px}.pg.c-gallery img{max-width:500px;max-height:380px}.pg.c-gallery h1{font-size:50px;border-bottom:6px solid #FFC92B;padding-bottom:6px}
+.pg.c-minimal .safe{gap:56px}.pg.c-minimal img{max-width:280px;max-height:260px}.pg.c-minimal h1{font-size:38px}
+.pg.c-seasonal .safe{justify-content:space-between;align-items:stretch;bottom:60px}
+.pg.c-seasonal .top{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.3em;color:#6E655D;padding-top:8px}
+.pg.c-seasonal img{max-width:620px;max-height:440px;align-self:center}.pg.c-seasonal h1{font-size:46px}
+.pg.c-frame .safe{gap:40px}.pg.c-frame .mat{padding:34px 40px;background:#fff;border:1px solid #E3DACD;box-shadow:0 3px 0 #EEE6D6}.pg.c-frame img{max-width:380px;max-height:320px;display:block}.pg.c-frame h1{font-size:40px}
+.pg.c-big .safe{inset:60px 60px 56px;justify-content:space-between;align-items:stretch}
+.pg.c-big h1{font-size:84px;line-height:1.05;max-width:600px}.pg.c-big img{max-width:360px;max-height:300px;align-self:flex-end}
+.pg.back .safe{align-items:center;justify-content:flex-end}
+.pg.back span{font-size:12px;letter-spacing:.14em;color:#7A716A}

@@ -1,0 +1,41 @@
+{
+  "feature": "꼼지가 그려줄게",
+  "note": "아이가 말한 이야기를 그림으로 그려줄 때 고르는 그림체 테마. 서버에서 이미지 생성 요청을 만들 때 common + 선택한 테마의 prompt를 합쳐서 씁니다. 실제 생성 품질은 업체를 정한 뒤 검증이 필요합니다.",
+  "default": "kid",
+  "common": {
+    "prompt": "An illustration for a young child's picture diary. One simple scene on plain paper, no frame, no border. Draw only what is described in the story and nothing else. Gentle, cheerful mood. No text, no letters, no numbers, no watermark.",
+    "avoid": "photorealistic, 3D render, glossy, anime, famous characters or mascots, text, dark or scary mood",
+    "aspect": "4:3",
+    "storyRule": "이야기에 없는 사건이나 인물, 감정을 덧붙이지 않는다."
+  },
+  "themes": [
+    {
+      "id": "kid",
+      "name": { "ko": "꼬마 화가", "en": "Little Artist" },
+      "description": { "ko": "지금 꼼지일기의 기본 그림체. 아이가 크레용으로 직접 그린 듯 삐뚤빼뚤한 그림.", "en": "The default Kkomji look, as if a child drew it in crayon." },
+      "prompt": "Looks like it was drawn by a 5-year-old with wax crayons on white paper. Wobbly, uneven outlines in bright colors, slightly off proportions, shapes filled with a paler tint scribbled unevenly so paper shows through.",
+      "sample": "assets/style-kid.png"
+    },
+    {
+      "id": "round",
+      "name": { "ko": "동글동글", "en": "Roly-Poly" },
+      "description": { "ko": "모든 것이 둥글둥글하고 굵은 선에 선명한 색, 해와 동물에 귀여운 표정.", "en": "Everything rounded, thick even outlines, bright flat colors, cute faces." },
+      "prompt": "Cute rounded cartoon style for toddlers. Every shape has soft rounded corners, thick even dark-brown outlines, flat bright fills with no shading, simple dot eyes and small smiles with pink cheeks on the sun, animals and people. White background.",
+      "sample": "assets/style-round.png"
+    },
+    {
+      "id": "storybook",
+      "name": { "ko": "포근한 그림책", "en": "Cozy Storybook" },
+      "description": { "ko": "선 없이 차분한 색으로 칠한, 서점 그림책 같은 따뜻한 그림.", "en": "No outlines, calm colors, warm like a picture book from the shop." },
+      "prompt": "Warm picture-book illustration in gouache. No outlines; shapes are painted areas with soft grainy texture. Muted warm palette of sage green, terracotta, cream, dusty blue and ochre on off-white paper. Calm composition with a few small details such as flowers or chimney smoke only when they fit the story.",
+      "sample": "assets/style-storybook.png"
+    },
+    {
+      "id": "doodle",
+      "name": { "ko": "쓱쓱 낙서", "en": "Quick Doodle" },
+      "description": { "ko": "검은 펜으로 쓱쓱 그린 선 그림에 색은 한두 군데만.", "en": "Loose black pen lines with just one or two spots of color." },
+      "prompt": "Loose hand-drawn black pen line doodle on white paper. Thin, slightly shaky single lines, lots of white space, no shading. Only one or two spots of flat color (soft yellow or pink) on the most important things.",
+      "sample": "assets/style-doodle.png"
+    }
+  ]
+}

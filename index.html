@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>꼼지일기 — 그리고, 말하고, 그림일기로.</title>
+<meta name="description" content="아이가 그린 그림과 한 말을 한 편의 그림일기로. 하루하루 모이면 세상에 하나뿐인 그림책이 됩니다.">
+<meta property="og:title" content="꼼지일기 — 그리고, 말하고, 그림일기로.">
+<meta property="og:description" content="오늘 너의 마음엔 어떤 그림이 피었니?">
+<meta name="theme-color" content="#FFFDF8">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/book.css">
+<style>
+body{margin:0;background:#FFFDF8}
+.hand{font-family:'Gaegu',cursive}
+a{color:#2350B8}a:hover{color:#1A3D8F}
+h1,h2,h3,p,span,a,li,summary,dt,dd,b{word-break:keep-all}
+.kk-wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px;box-sizing:border-box}
+.kk-head{display:flex;align-items:center;gap:12px 28px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+.kk-nav{order:2;flex:1;display:flex;justify-content:center;gap:32px;white-space:nowrap;font-size:15px;font-weight:500}
+.kk-headcta{order:3}
+.kk-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:40px;padding-bottom:88px}
+.kk-sec{padding-top:104px;padding-bottom:104px}
+.kk-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:64px;align-items:center}
+.kk-scroll{scrollbar-width:none}.kk-scroll::-webkit-scrollbar{display:none}
+details>summary{cursor:pointer;list-style:none}details>summary::-webkit-details-marker{display:none}
+details[open] .kk-plus{transform:rotate(45deg)}
+@media (max-width:860px){
+.kk-wrap{padding-left:20px;padding-right:20px}
+.kk-head{padding-top:12px;padding-bottom:0}
+.kk-headcta{order:2;margin-left:auto}
+.kk-nav{order:3;flex:0 0 100%;justify-content:flex-start;gap:24px;overflow-x:auto;padding:12px 0 14px;border-top:1px solid #EDE6DC;scrollbar-width:none}
+.kk-nav::-webkit-scrollbar{display:none}
+.kk-hero{gap:28px;padding-top:28px;padding-bottom:64px}
+.kk-sec{padding-top:72px;padding-bottom:72px}
+.kk-split{grid-template-columns:minmax(0,1fr);gap:40px}
+.kk-ctas a{flex:1 1 100%;justify-content:center}
+}
+@media (max-width:640px){.kk-hero{grid-template-columns:minmax(0,1fr);gap:36px}}
+.kk-scene{zoom:1}
+@media (max-width:1080px){.kk-scene{zoom:0.72}}
+@media (max-width:860px){.kk-scene{zoom:0.6}}
+@media (max-width:360px){.kk-scene{zoom:0.52}}
+html{scroll-behavior:smooth}body{font-family:'IBM Plex Sans KR',system-ui,sans-serif}</style>
+</head>
+<body>
+<div style="background:#FFFDF8;color:#453E39;font-family:'IBM Plex Sans KR',sans-serif;overflow:hidden">
+
+<header style="border-bottom:1px solid #EDE6DC;background:#FFFDF8">
+<div class="kk-wrap kk-head">
+<a href="#top" aria-label="꼼지일기 홈" style="order:1;display:flex"><img src="assets/logo-ko.png" alt="꼼지일기" style="height:46px;width:auto;display:block"></a>
+<nav class="kk-nav" aria-label="주요 메뉴">
+<a href="#idea" style="color:#453E39;text-decoration:none">꼼지일기 이야기</a>
+<a href="#how" style="color:#453E39;text-decoration:none">이용 방법</a>
+<a href="#book" style="color:#453E39;text-decoration:none">그림책</a>
+<a href="#price" style="color:#453E39;text-decoration:none">요금</a>
+<a href="#promise" style="color:#453E39;text-decoration:none">부모님 약속</a>
+</nav>
+<a class="kk-headcta" href="app.html" style="height:44px;padding:0 20px;border-radius:999px;background:#453E39;color:#FFFFFF;font-size:15px;font-weight:600;display:flex;align-items:center;text-decoration:none;white-space:nowrap">앱 시작하기</a>
+</div>
+</header>
+
+<section id="top" class="kk-wrap kk-hero">
+<div style="display:flex;flex-direction:column;gap:20px;min-width:0">
+<span style="align-self:flex-start;padding:8px 14px;border-radius:999px;background:#FFF2C7;font-size:14px;font-weight:600">AI 어린이 그림일기 · 맞춤 그림책</span>
+<h1 class="hand" style="margin:0;font-size:clamp(40px,5.2vw,68px);font-weight:700;line-height:1.1">오늘 너의 마음엔<br>어떤 그림이 <span style="color:#3168E8;white-space:nowrap">피었니?</span></h1>
+<div style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
+<p class="hand" style="margin:0;font-size:clamp(26px,2.6vw,32px);font-weight:700;line-height:1.25">그리고, 말하고, 그림일기로.</p>
+<svg width="250" height="12" viewBox="0 0 250 12" aria-hidden="true" style="max-width:100%"><path d="M4 8 C50 3 100 10 150 5 S220 4 246 7" stroke="#FFC92B" stroke-width="5" fill="none" stroke-linecap="round"></path></svg>
+</div>
+<p style="margin:0;font-size:18px;line-height:1.75;color:#5E5650;max-width:520px">아이가 그린 그림과 한 말을 꼼지가 한 편의 일기로 엮어요. 글을 몰라도 괜찮아요. 하루하루 모이면 세상에 하나뿐인 그림책이 됩니다.</p>
+<div class="kk-ctas" style="display:flex;gap:12px;flex-wrap:wrap">
+<a href="app.html" style="height:60px;padding:0 30px;border-radius:999px;background:#FFC92B;color:#453E39;font-size:18px;font-weight:700;display:flex;align-items:center;text-decoration:none;box-sizing:border-box">오늘의 그림일기 시작하기</a>
+<a href="#book" style="height:60px;padding:0 26px;border-radius:999px;border:2px solid #453E39;color:#453E39;font-size:17px;font-weight:600;display:flex;align-items:center;text-decoration:none;box-sizing:border-box">그림책 살펴보기</a>
+</div>
+<ul style="margin:4px 0 0;padding:0;list-style:none;display:flex;gap:8px 18px;flex-wrap:wrap;font-size:14px;color:#5E5650">
+<li style="display:flex;gap:6px;align-items:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3E8E33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>4–7세, 글을 몰라도</li>
+<li style="display:flex;gap:6px;align-items:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3E8E33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>아이 그림·말 원본 그대로</li>
+<li style="display:flex;gap:6px;align-items:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3E8E33" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>한국어 · English</li>
+</ul>
+</div>
+<div style="position:relative;width:100%;max-width:540px;aspect-ratio:10 / 9.4;justify-self:center;container-type:inline-size">
+<article style="position:absolute;left:0;top:5%;width:48%;background:#FFFFFF;border:1px solid #EDE6DC;border-radius:16px;padding:3% 3% 3.4%;box-sizing:border-box;transform:rotate(-5deg);box-shadow:0 18px 40px rgba(69,62,57,0.10)">
+<img src="assets/drawing-flowers-cover.png" alt="아이가 그린 꽃밭" style="width:100%;aspect-ratio:16 / 9;object-fit:contain;display:block">
+<div style="font-size:clamp(10px,2.3cqw,12px);color:#6F665F;margin-top:4px">4월 12일 (일)</div>
+<div class="hand" style="font-size:clamp(15px,4.2cqw,22px);font-weight:700">꽃밭</div>
+</article>
+<article style="position:absolute;right:0;top:0;width:48%;background:#FFFFFF;border:1px solid #EDE6DC;border-radius:16px;padding:3% 3% 3.4%;box-sizing:border-box;transform:rotate(4deg);box-shadow:0 18px 40px rgba(69,62,57,0.10)">
+<img src="assets/drawing-swim.png" alt="아이가 그린 수영 그림" style="width:100%;aspect-ratio:16 / 8.2;object-fit:cover;border-radius:8px;display:block">
+<div style="font-size:clamp(10px,2.3cqw,12px);color:#6F665F;margin-top:4px">4월 23일 (목)</div>
+<div class="hand" style="font-size:clamp(15px,4.2cqw,22px);font-weight:700">수영을 했어요</div>
+</article>
+<article style="position:absolute;left:17%;top:45%;width:62%;background:#FFFFFF;border:1px solid #EDE6DC;border-radius:18px;padding:3.2% 3.4% 3.6%;box-sizing:border-box;transform:rotate(-1deg);box-shadow:0 24px 50px rgba(69,62,57,0.16);display:flex;flex-direction:column;gap:3px">
+<div style="font-size:clamp(10px,2.3cqw,12px);color:#6F665F">4월 22일 (수) · 맑음 · 신나요</div>
+<div class="hand" style="font-size:clamp(17px,4.8cqw,26px);font-weight:700">우리 집 앞에 핀 꽃</div>
+<img src="assets/drawing-flowers-real.png" alt="아이가 그린 꽃 그림" style="width:100%;aspect-ratio:16 / 8;object-fit:contain;display:block">
+<p class="hand" style="margin:0;font-size:clamp(13px,3.7cqw,20px);line-height:1.4">빨간 꽃도 있고 노란 꽃도 있었어요.</p>
+</article>
+<img src="assets/mascot.png" alt="" style="position:absolute;right:-2%;bottom:0;width:24%;height:auto">
+</div>
+</section>
+
+<section id="idea" style="background:#FFFFFF;border-top:1px solid #EDE6DC;border-bottom:1px solid #EDE6DC">
+<div class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:14px;max-width:760px">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">꼼지일기 이야기</span>
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.2">아이는 매일 자라는데,<br>그 하루는 금방 잊혀요.</h2>
+<p style="margin:0;font-size:18px;line-height:1.75;color:#5E5650">오늘 무엇을 보고, 무슨 생각을 하고, 무엇이 가장 기억에 남았는지. 아이만의 말과 그림으로 하루 한 장씩 남겨 두면, 그 기록은 아이가 어떻게 자라왔는지 보여주는 가장 정직한 앨범이 돼요.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:24px;background:#F1F5FF">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 30 C4 30 4 20 11 20 C10 12 20 10 23 15 C26 8 38 10 37 18 C44 18 44 30 37 30 Z" fill="#FFFFFF" stroke="#3168E8" stroke-width="3" stroke-linejoin="round"></path><circle cx="18" cy="38" r="2.5" fill="#3168E8"></circle><circle cx="13" cy="43" r="1.6" fill="#3168E8"></circle></svg>
+<h3 class="hand" style="margin:0;font-size:30px;font-weight:700">생각을 담아요</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">오늘 무슨 생각을 했는지, 아이가 한 말을 고치지 않고 그대로. 엉뚱한 말일수록 더 소중하니까요.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:24px;background:#FFF6D6">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="4" fill="#FFFFFF" stroke="#E9A800" stroke-width="3"></rect><path d="M12 32 q6 -12 12 -2 t12 -8" stroke="#ED6CA6" stroke-width="3" fill="none" stroke-linecap="round"></path><circle cx="33" cy="17" r="3" fill="#FFC92B"></circle></svg>
+<h3 class="hand" style="margin:0;font-size:30px;font-weight:700">기억을 담아요</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">하루 중 가장 기억에 남은 한 장면을 아이의 그림으로. 종이에 그린 그림도 원본 그대로 보관해요.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:24px;background:#E6F6EF">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42 V20" stroke="#3E8E33" stroke-width="3" stroke-linecap="round"></path><path d="M24 26 C14 26 10 18 12 12 C20 12 24 18 24 26 Z M24 22 C32 22 37 15 35 8 C27 8 24 14 24 22 Z" fill="#B5E2AC" stroke="#3E8E33" stroke-width="3" stroke-linejoin="round"></path><path d="M10 42 h28" stroke="#3E8E33" stroke-width="3" stroke-linecap="round"></path></svg>
+<h3 class="hand" style="margin:0;font-size:30px;font-weight:700">성장을 담아요</h3>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">말이 길어지고, 그림이 자세해지고, 직접 쓴 글씨가 생겨나요. 쌓인 하루들이 자라는 모습을 보여줘요.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="how" class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:44px">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">이용 방법</span>
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.15">그리고, 말하고, 그림일기로.</h2>
+<p style="margin:0;font-size:18px;line-height:1.7;color:#5E5650">하루 5분이면 충분해요. 아이가 하는 건 그리고 말하는 것뿐, 나머지는 꼼지가 도와요.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:20px 20px 28px;background:#FFFDF8;display:flex;flex-direction:column;gap:18px">
+<div style="height:220px;border-radius:20px;background:#F1F5FF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:16px;box-sizing:border-box">
+<img src="assets/drawing-house.png" alt="그림판에 그린 집 그림" style="width:min(240px,86%);border-radius:12px;background:#FFFFFF;box-shadow:0 6px 16px rgba(69,62,57,0.10)">
+<div style="display:flex;gap:8px" aria-hidden="true"><span style="width:20px;height:20px;border-radius:50%;background:#E5413A"></span><span style="width:20px;height:20px;border-radius:50%;background:#ED6CA6;box-shadow:0 0 0 3px #FFFFFF,0 0 0 5px #3168E8"></span><span style="width:20px;height:20px;border-radius:50%;background:#FFC92B"></span><span style="width:20px;height:20px;border-radius:50%;background:#75C768"></span><span style="width:20px;height:20px;border-radius:50%;background:#3168E8"></span></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:0 6px">
+<div style="display:flex;align-items:center;gap:10px"><span class="hand" style="width:36px;height:36px;border-radius:50%;background:#3168E8;color:#FFFFFF;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">1</span><h3 class="hand" style="margin:0;font-size:30px;font-weight:700">그려요</h3></div>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">크레용·색연필·사인펜으로 화면에 바로 그리거나, 종이에 그린 그림을 찍어 올려요. 테두리와 기울기는 알아서 맞춰져요.</p>
+</div>
+</article>
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:20px 20px 28px;background:#FFFDF8;display:flex;flex-direction:column;gap:18px">
+<div style="height:220px;border-radius:20px;background:#FFF1EC;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px;box-sizing:border-box">
+<p class="hand" style="margin:0;max-width:240px;background:#FFFFFF;border-radius:16px 16px 16px 4px;padding:12px 16px;font-size:21px;line-height:1.4;box-shadow:0 6px 16px rgba(69,62,57,0.08)">오늘 우리 집 앞에서 예쁜 꽃을 봤어요.</p>
+<span style="width:64px;height:64px;border-radius:50%;background:#FF8768;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px #FFD9CC" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3"></path></svg></span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:0 6px">
+<div style="display:flex;align-items:center;gap:10px"><span class="hand" style="width:36px;height:36px;border-radius:50%;background:#FF8768;color:#FFFFFF;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">2</span><h3 class="hand" style="margin:0;font-size:30px;font-weight:700">말해요</h3></div>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">마이크를 누르고 오늘 이야기를 들려주면 꼼지가 받아 적어요. 직접 타이핑하거나 손글씨로 써도 좋아요.</p>
+</div>
+</article>
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:20px 20px 28px;background:#FFFDF8;display:flex;flex-direction:column;gap:18px">
+<div style="height:220px;border-radius:20px;background:#E6F6EF;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box">
+<div style="width:min(230px,88%);background:#FFFFFF;border-radius:14px;padding:12px 14px;box-shadow:0 8px 20px rgba(69,62,57,0.10);display:flex;flex-direction:column;gap:3px">
+<span style="font-size:10px;color:#6F665F">4월 22일 (수) · 맑음 · 신나요</span>
+<span class="hand" style="font-size:19px;font-weight:700">우리 집 앞에 핀 꽃</span>
+<img src="assets/drawing-flowers-real.png" alt="" style="width:100%;height:74px;object-fit:contain">
+<span class="hand" style="font-size:14px;line-height:1.35">빨간 꽃도 있고 노란 꽃도 있었어요.</span>
+<span style="border-top:1px solid #EDE6DC;padding-top:4px;margin-top:2px;font-family:'Gowun Dodum',sans-serif;font-size:10px;color:#5E5650">부모님 코멘트 · 네 마음이 참 예뻐.</span>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:0 6px">
+<div style="display:flex;align-items:center;gap:10px"><span class="hand" style="width:36px;height:36px;border-radius:50%;background:#3E8E33;color:#FFFFFF;font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none">3</span><h3 class="hand" style="margin:0;font-size:30px;font-weight:700">그림일기가 돼요</h3></div>
+<p style="margin:0;font-size:16px;line-height:1.7;color:#4F4842">날짜·날씨·기분과 함께 한 장의 그림일기로 완성. 부모님은 그날 페이지에 응원 한마디를 남길 수 있어요.</p>
+</div>
+</article>
+</div>
+</section>
+
+<section id="days" style="background:#FFFFFF;border-top:1px solid #EDE6DC;border-bottom:1px solid #EDE6DC">
+<div class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px 24px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;gap:12px">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">아이의 하루</span>
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.2">같은 아이, 매일 다른 이야기</h2>
+</div>
+<span style="font-size:14px;color:#6F665F">예시 · 한 아이의 4월 그림일기</span>
+</div>
+<div class="kk-scroll" style="display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:4px">
+
+<article style="flex:0 0 216px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px">
+<div style="height:150px;border-radius:18px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/drawing-flowers-cover.png" alt="꽃밭" style="width:100%;height:100%;object-fit:contain"></div>
+<span style="font-size:13px;color:#6F665F">4월 12일 (일)</span>
+<p class="hand" style="margin:0;font-size:22px;line-height:1.35">“꽃들이 나한테 인사하는 것 같았어”</p>
+</article>
+
+<article style="flex:0 0 216px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px">
+<div style="height:150px;border-radius:18px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/drawing-rain.png" alt="비 오는 날 노란 우산" style="width:100%;height:100%;object-fit:contain"></div>
+<span style="font-size:13px;color:#6F665F">4월 18일 (토)</span>
+<p class="hand" style="margin:0;font-size:22px;line-height:1.35">“우산에서 빗소리가 노래했어”</p>
+</article>
+
+<article style="flex:0 0 216px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px">
+<div style="height:150px;border-radius:18px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/drawing-flowers-real.png" alt="우리 집 앞에 핀 꽃" style="width:100%;height:100%;object-fit:contain"></div>
+<span style="font-size:13px;color:#6F665F">4월 22일 (수)</span>
+<p class="hand" style="margin:0;font-size:22px;line-height:1.35">“빨간 꽃도 있고 노란 꽃도 있었어”</p>
+</article>
+
+<article style="flex:0 0 216px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px">
+<div style="height:150px;border-radius:18px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/drawing-swim.png" alt="수영을 했어요" style="width:100%;height:100%;object-fit:contain"></div>
+<span style="font-size:13px;color:#6F665F">4월 23일 (목)</span>
+<p class="hand" style="margin:0;font-size:22px;line-height:1.35">“발차기를 열 번이나 했어!”</p>
+</article>
+
+<article style="flex:0 0 216px;scroll-snap-align:start;display:flex;flex-direction:column;gap:10px">
+<div style="height:150px;border-radius:18px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/drawing-house.png" alt="할머니 집에 갔어요" style="width:100%;height:100%;object-fit:contain"></div>
+<span style="font-size:13px;color:#6F665F">4월 26일 (일)</span>
+<p class="hand" style="margin:0;font-size:22px;line-height:1.35">“할머니 집 나무에 빨간 열매가 있었어”</p>
+</article>
+
+</div>
+<div style="height:2px;background:repeating-linear-gradient(90deg,#C9BFB2 0,#C9BFB2 8px,transparent 8px,transparent 16px)" aria-hidden="true"></div>
+<p style="margin:0;font-size:17px;line-height:1.7;color:#5E5650;max-width:720px">어떤 날은 꽃이, 어떤 날은 차가운 수영장 물이 가장 기억에 남아요. 꼼지일기는 그 한 가지를 묻고, 듣고, 그대로 남깁니다.</p>
+</div>
+</section>
+
+<section id="book" style="background:#EFE9DF">
+<div class="kk-wrap kk-sec kk-split">
+<div style="display:flex;flex-direction:column;gap:22px;min-width:0">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">그림책</span>
+<h2 class="hand" style="margin:0;font-size:clamp(36px,4vw,56px);font-weight:700;line-height:1.15">스무 살 아이에게<br>건넬 단 한 권.</h2>
+<p style="margin:0;font-size:18px;line-height:1.8;color:#4F4842;max-width:500px"><b style="color:#453E39">“나 어릴 때 어땠어?”</b> 하고 묻는 날, 말 대신 펼쳐 줄 책이에요. 아이가 그리고 말한 하루가 한 페이지씩, 부모님의 한마디와 함께 담겨요.</p>
+<dl style="margin:6px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #D6CCBE;border-bottom:1px solid #D6CCBE">
+<div style="padding:16px 12px 16px 0;display:flex;flex-direction:column;gap:4px"><dt style="font-size:12px;color:#6B625A">하드커버</dt><dd class="hand" style="margin:0;font-size:22px;font-weight:700;line-height:1.2">210mm 정사각</dd></div>
+<div style="padding:16px 12px;border-left:1px solid #D6CCBE;display:flex;flex-direction:column;gap:4px"><dt style="font-size:12px;color:#6B625A">구성</dt><dd class="hand" style="margin:0;font-size:22px;font-weight:700;line-height:1.2">하루 한 페이지</dd></div>
+<div style="padding:16px 0 16px 12px;border-left:1px solid #D6CCBE;display:flex;flex-direction:column;gap:4px"><dt style="font-size:12px;color:#6B625A">디자인</dt><dd class="hand" style="margin:0;font-size:22px;font-weight:700;line-height:1.2">표지 5 · 내지 5</dd></div>
+</dl>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:6px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap"><span style="font-size:16px;font-weight:700">출석 완주 할인</span><span style="font-size:13px;color:#6B625A">빠짐없이 쓸수록 책값이 가벼워져요</span></div>
+<div style="display:flex;align-items:baseline;gap:12px;padding:8px 0"><span style="font-size:16px;font-weight:700;white-space:nowrap">하루도 빠짐없이</span><span style="flex:1;border-bottom:2px dotted #B9AE9F;transform:translateY(-4px)"></span><span class="hand" style="font-size:32px;font-weight:700;line-height:1;color:#2350B8;white-space:nowrap">30% 할인</span></div>
+<div style="display:flex;align-items:baseline;gap:12px;padding:6px 0"><span style="font-size:15px;white-space:nowrap">열에 아홉 날</span><span style="flex:1;border-bottom:2px dotted #B9AE9F;transform:translateY(-4px)"></span><span class="hand" style="font-size:26px;font-weight:700;line-height:1;white-space:nowrap">20% 할인</span></div>
+<div style="display:flex;align-items:baseline;gap:12px;padding:6px 0"><span style="font-size:15px;white-space:nowrap">열에 여덟 날</span><span style="flex:1;border-bottom:2px dotted #B9AE9F;transform:translateY(-4px)"></span><span class="hand" style="font-size:26px;font-weight:700;line-height:1;white-space:nowrap">10% 할인</span></div>
+</div>
+<a href="#price" style="align-self:flex-start;margin-top:4px;height:56px;padding:0 26px;border-radius:999px;background:#453E39;color:#FFFFFF;font-size:16px;font-weight:600;display:flex;align-items:center;text-decoration:none">그림책 가격 보기</a>
+</div>
+<div style="display:flex;justify-content:center;min-width:0">
+<div class="kk-scene" style="width:560px;height:560px;position:relative;flex:none">
+<div style="position:absolute;left:0;top:262px;width:560px;height:284px;border-radius:3px;background:#E4DCCF;box-shadow:0 30px 50px rgba(69,62,57,0.26), 0 4px 0 #D9D0C2"></div>
+<div style="position:absolute;left:0;top:260px;width:560px;height:280px;display:flex;border-radius:2px;overflow:hidden">
+<div style="width:280px;height:280px;position:relative;overflow:hidden;background:#FFFDF8">
+<div style="position:absolute;left:-4px;top:-4px;width:816px;height:816px;transform:scale(0.353);transform-origin:0 0"><section class="pg l-classic"><div class="safe"><div class="meta"><span>4월 22일 (수)</span><i></i><span style="display:flex;align-items:center;gap:6px"><svg width="20" height="20" viewBox="0 0 40 40" fill="none" stroke="#E9A800" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="20" r="7"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M8.5 8.5l3.5 3.5M28 28l3.5 3.5M31.5 8.5L28 12M12 28l-3.5 3.5"/></svg>맑음</span><i></i><span>신나요</span></div><h2 class="ttl">우리 집 앞에 핀 꽃</h2><div class="art"><img src="assets/drawing-flowers-real.png" alt=""></div><p class="story">오늘 우리 집 앞에서 예쁜 꽃을 봤어요.
+빨간 꽃도 있고 노란 꽃도 있었어요.</p><span class="sp"></span><div class="nb"><span class="lbl">부모님 코멘트</span><p class="note">작은 꽃도 놓치지 않고 바라보는 네 마음이 참 예뻐. 오늘의 봄을 오래 기억하자.</p></div></div><div class="no">12</div></section></div>
+<div style="position:absolute;top:0;right:0;width:46px;height:100%;background:linear-gradient(90deg,rgba(69,62,57,0),rgba(69,62,57,0.14))" aria-hidden="true"></div>
+</div>
+<div style="width:280px;height:280px;position:relative;overflow:hidden;background:#FFFDF8">
+<div style="position:absolute;left:-4px;top:-4px;width:816px;height:816px;transform:scale(0.353);transform-origin:0 0"><section class="pg l-classic nonote"><div class="safe"><div class="meta"><span>4월 23일 (목)</span><i></i><span style="display:flex;align-items:center;gap:6px"><svg width="20" height="20" viewBox="0 0 40 40" fill="none" stroke="#E9A800" stroke-width="3" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="20" r="7"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M8.5 8.5l3.5 3.5M28 28l3.5 3.5M31.5 8.5L28 12M12 28l-3.5 3.5"/></svg>맑음</span><i></i><span>행복해요</span></div><h2 class="ttl">수영을 했어요</h2><div class="art"><img src="assets/drawing-swim.png" alt=""></div><p class="story">아빠랑 수영장에 갔어요.
+물이 차가웠는데 발차기를 열 번이나 했어요!</p><span class="sp"></span></div><div class="no">13</div></section></div>
+<div style="position:absolute;top:0;left:0;width:46px;height:100%;background:linear-gradient(270deg,rgba(69,62,57,0),rgba(69,62,57,0.14))" aria-hidden="true"></div>
+</div>
+</div>
+<div style="position:absolute;left:118px;top:0;width:324px;height:312px;transform:rotate(-4deg);border-radius:3px 9px 9px 3px;background:#DDD3C3;box-shadow:0 26px 44px rgba(69,62,57,0.30)">
+<div style="position:absolute;left:0;top:0;width:312px;height:312px;border-radius:3px 9px 9px 3px;overflow:hidden;background:#FBF7EE">
+<div style="position:absolute;left:0;top:0;width:816px;height:816px;transform:scale(0.3824);transform-origin:0 0"><section class="pg cover c-gallery"><div class="safe"><img src="assets/drawing-flowers-cover.png" alt=""><h1>이재의 2026년 봄·여름</h1></div></section></div>
+<div style="position:absolute;left:0;top:0;width:22px;height:100%;background:linear-gradient(90deg,rgba(69,62,57,0.16),rgba(69,62,57,0.03) 55%,rgba(255,255,255,0.35) 62%,rgba(69,62,57,0) 100%)" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="price" class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">요금</span>
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.2">그림일기는 무료로 시작해요</h2>
+<p style="margin:0;font-size:17px;line-height:1.7;color:#5E5650">매일 쓰는 건 무료로 충분해요. 더 많이 남기고 책으로 만들고 싶을 때 플러스를 선택하세요.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;align-items:stretch">
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:28px;background:#FFFFFF;display:flex;flex-direction:column;gap:16px">
+<h3 style="margin:0;font-size:18px;font-weight:700">무료</h3>
+<div><span class="hand" style="font-size:48px;font-weight:700;line-height:1">0원</span></div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5;color:#4F4842;flex:1">
+<li>월 10편 그림일기</li><li>그림판 · 종이 그림 스캔 업로드</li><li>말로 쓰기 (음성 인식)</li><li>달력 · 갤러리 일기장</li>
+</ul>
+<a href="app.html" style="height:52px;border-radius:999px;border:2px solid #453E39;color:#453E39;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;text-decoration:none">무료로 시작하기</a>
+</article>
+<article style="border:2px solid #3168E8;border-radius:28px;padding:27px;background:#FFFFFF;display:flex;flex-direction:column;gap:16px;position:relative">
+<span style="position:absolute;top:-14px;left:24px;padding:4px 12px;border-radius:999px;background:#3168E8;color:#FFFFFF;font-size:13px;font-weight:700">가장 많이 남기는 방법</span>
+<h3 style="margin:0;font-size:18px;font-weight:700">꼼지 플러스</h3>
+<div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span class="hand" style="font-size:48px;font-weight:700;line-height:1">3,900원</span><span style="font-size:15px;color:#5E5650">/ 월 · 연 39,000원</span></div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5;color:#4F4842;flex:1">
+<li>그림일기 무제한</li><li>AI 글 정리 · 영어 번역 (선택)</li><li>고해상도 원본 백업</li><li>PDF 그림책 무제한</li><li>실물 그림책 할인</li>
+</ul>
+<a href="app.html" style="height:52px;border-radius:999px;background:#FFC92B;color:#453E39;font-size:16px;font-weight:700;display:flex;align-items:center;justify-content:center;text-decoration:none">플러스로 시작하기</a>
+</article>
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:28px;background:#FFF6D6;display:flex;flex-direction:column;gap:16px">
+<h3 style="margin:0;font-size:18px;font-weight:700">꼼지 단짝</h3>
+<div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span class="hand" style="font-size:48px;font-weight:700;line-height:1">5,900원</span><span style="font-size:15px;color:#5E5650">/ 월 · 연 59,000원</span></div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5;color:#4F4842;flex:1">
+<li>플러스의 모든 기능</li><li><b style="color:#453E39">“꼼지가 그려줄게”</b> 월 10장</li><li>그리기 싫은 날, 아이가 말한 이야기를 크레용 그림으로</li><li>10장을 넘기면 5장에 1,000원</li>
+</ul>
+<a href="app.html" style="height:52px;border-radius:999px;background:#453E39;color:#FFFFFF;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;text-decoration:none">단짝으로 시작하기</a>
+</article>
+<article style="border:1px solid #EDE6DC;border-radius:28px;padding:28px;background:#FFFFFF;display:flex;flex-direction:column;gap:16px">
+<h3 style="margin:0;font-size:18px;font-weight:700">실물 그림책</h3>
+<div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap"><span class="hand" style="font-size:48px;font-weight:700;line-height:1">29,000원</span><span style="font-size:15px;color:#5E5650">부터 · 소프트커버 24p</span></div>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px;line-height:1.5;color:#4F4842;flex:1">
+<li>하드커버 24p 41,900원부터</li><li>이틀치(2페이지) 추가 1,200원</li><li>출석 완주 시 최대 30% 할인</li><li>5만 원 이상 무료 배송</li>
+</ul>
+<a href="#book" style="height:52px;border-radius:999px;border:2px solid #453E39;color:#453E39;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center;text-decoration:none">그림책 살펴보기</a>
+</article>
+</div>
+<p style="margin:0;align-self:flex-start;padding:12px 18px;border-radius:16px;background:#E6F6EF;font-size:16px;line-height:1.5"><b>형제 할인</b> · 둘째부터는 플러스와 단짝 모두 30% 할인</p>
+<p style="margin:0;font-size:13px;color:#6F665F">출시 예정가이며 변경될 수 있어요. 실물 그림책 주문은 PDF 그림책 이후 순차적으로 열려요.</p>
+</section>
+
+<section id="promise" style="background:#FFFFFF;border-top:1px solid #EDE6DC;border-bottom:1px solid #EDE6DC">
+<div class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:720px">
+<span style="font-size:14px;font-weight:700;color:#2350B8;letter-spacing:0.02em">부모님 약속</span>
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.2">아이의 것은, 아이의 것 그대로</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px">
+<div style="padding:24px;border-radius:20px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;flex-direction:column;gap:8px"><span style="font-size:18px;font-weight:700">원본은 그대로</span><span style="font-size:15px;line-height:1.65;color:#5E5650">아이의 그림과 말은 절대 덮어쓰지 않아요.</span></div>
+<div style="padding:24px;border-radius:20px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;flex-direction:column;gap:8px"><span style="font-size:18px;font-weight:700">AI는 고를 때만</span><span style="font-size:15px;line-height:1.65;color:#5E5650">다듬기는 선택. 원본과 나란히 비교한 뒤에만 적용해요.</span></div>
+<div style="padding:24px;border-radius:20px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;flex-direction:column;gap:8px"><span style="font-size:18px;font-weight:700">비공개가 기본</span><span style="font-size:15px;line-height:1.65;color:#5E5650">가족 밖 공유는 부모님 확인 후에만, 음성 저장은 동의할 때만.</span></div>
+<div style="padding:24px;border-radius:20px;background:#FFFDF8;border:1px solid #EDE6DC;display:flex;flex-direction:column;gap:8px"><span style="font-size:18px;font-weight:700">학습에 쓰지 않아요</span><span style="font-size:15px;line-height:1.65;color:#5E5650">아이의 콘텐츠를 AI 모델 학습에 사용하지 않아요.</span></div>
+</div>
+</div>
+</section>
+
+<section id="faq" class="kk-wrap kk-sec" style="display:flex;flex-direction:column;gap:28px">
+<h2 class="hand" style="margin:0;font-size:clamp(34px,3.8vw,52px);font-weight:700;line-height:1.2">자주 묻는 질문</h2>
+<div style="display:flex;flex-direction:column;max-width:860px;border-top:1px solid #E3DACD">
+<details open style="border-bottom:1px solid #E3DACD;padding:20px 0">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;min-height:44px">몇 살부터 쓸 수 있나요?<span class="kk-plus" style="font-size:26px;font-weight:400;color:#6F665F;flex:none" aria-hidden="true">+</span></summary>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.75;color:#5E5650">4–7세를 중심으로 3–9세까지 쓸 수 있어요. 글을 몰라도 말로 일기를 쓸 수 있고, 나이에 따라 기능을 막지 않아요.</p>
+</details>
+<details style="border-bottom:1px solid #E3DACD;padding:20px 0">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;min-height:44px">AI가 아이의 그림이나 글을 바꾸나요?<span class="kk-plus" style="font-size:26px;font-weight:400;color:#6F665F;flex:none" aria-hidden="true">+</span></summary>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.75;color:#5E5650">아니요. 기본은 언제나 원본 그대로예요. 맞춤법 정리나 다듬기는 부모님이 고를 때만 적용되고, 원본과 나란히 비교한 뒤 언제든 되돌릴 수 있어요. 아이가 말하지 않은 내용은 덧붙이지 않아요.</p>
+</details>
+<details style="border-bottom:1px solid #E3DACD;padding:20px 0">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;min-height:44px">종이에 그린 그림도 올릴 수 있나요?<span class="kk-plus" style="font-size:26px;font-weight:400;color:#6F665F;flex:none" aria-hidden="true">+</span></summary>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.75;color:#5E5650">네. 사진을 찍으면 종이 테두리를 찾아 기울기를 바로잡고, 크레용 색은 그대로 살려요. 찍은 원본은 따로 보관돼요.</p>
+</details>
+<details style="border-bottom:1px solid #E3DACD;padding:20px 0">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;min-height:44px">그림책은 어떻게 만들어지나요?<span class="kk-plus" style="font-size:26px;font-weight:400;color:#6F665F;flex:none" aria-hidden="true">+</span></summary>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.75;color:#5E5650">기간을 고르면 하루 한 페이지로 자동 편집돼요. 표지와 내지 디자인을 고른 뒤 미리보기로 확인하고, 인쇄용 PDF로 내려받을 수 있어요.</p>
+</details>
+<details style="border-bottom:1px solid #E3DACD;padding:20px 0">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:18px;font-weight:600;min-height:44px">아이 정보는 안전한가요?<span class="kk-plus" style="font-size:26px;font-weight:400;color:#6F665F;flex:none" aria-hidden="true">+</span></summary>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.75;color:#5E5650">가입과 관리는 부모님 계정으로 해요. 모든 일기는 비공개가 기본이고, 음성은 동의한 경우에만 저장해요. 언제든 원본을 내려받거나 삭제할 수 있어요.</p>
+</details>
+</div>
+</section>
+
+<section id="start" class="kk-wrap" style="padding-bottom:80px">
+<div style="border-radius:36px;background:#FFC92B;padding:clamp(36px,5vw,64px) clamp(24px,4vw,56px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;position:relative;overflow:hidden">
+<div style="display:flex;flex-direction:column;gap:10px;flex:1 1 380px;min-width:0">
+<h2 class="hand" style="margin:0;font-size:clamp(34px,4vw,54px);font-weight:700;line-height:1.15;color:#453E39">오늘 하루, 아이에게 물어봐 주세요.</h2>
+<p style="margin:0;font-size:18px;line-height:1.6;color:#453E39">“오늘 뭐가 제일 기억에 남았어?” 그 대답이 첫 페이지가 돼요.</p>
+</div>
+<a href="app.html" style="height:64px;padding:0 34px;border-radius:999px;background:#453E39;color:#FFFFFF;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;text-decoration:none;flex:0 1 auto">무료로 시작하기</a>
+</div>
+</section>
+
+<footer style="border-top:1px solid #EDE6DC;background:#FFFFFF">
+<div class="kk-wrap" style="padding-top:36px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between">
+<div style="display:flex;flex-direction:column;gap:10px;max-width:360px">
+<img src="assets/logo-ko.png" alt="꼼지일기" style="height:44px;width:auto;align-self:flex-start">
+<span class="hand" style="font-size:20px;font-weight:700">그리고, 말하고, 그림일기로.</span>
+<span style="font-size:13px;color:#6F665F">Kkomji Diary · Little Drawings, Big Stories.</span>
+</div>
+<div style="display:flex;gap:40px;flex-wrap:wrap;font-size:14px">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:700">서비스</span><a href="#how" style="color:#5E5650;text-decoration:none">이용 방법</a><a href="#book" style="color:#5E5650;text-decoration:none">그림책</a><a href="#price" style="color:#5E5650;text-decoration:none">요금</a></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-weight:700">안내</span><a href="#promise" style="color:#5E5650;text-decoration:none">부모님 약속</a><a href="#faq" style="color:#5E5650;text-decoration:none">자주 묻는 질문</a><a href="#promise" style="color:#5E5650;text-decoration:none">개인정보처리방침</a></div>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
